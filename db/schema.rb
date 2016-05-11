@@ -50,10 +50,7 @@ ActiveRecord::Schema.define(version: 20160511202929) do
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "product_id"
   end
-
-  add_index "catalogs", ["product_id"], name: "index_catalogs_on_product_id"
 
   create_table "products", force: :cascade do |t|
     t.string   "title"
